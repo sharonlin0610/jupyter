@@ -1,0 +1,11 @@
+#指定基底文件為jupyter/base-notebook
+#FROM yangty10/news_jupyter-tutorial
+#RUN pip install --upgrade pip
+#RUN pip install kafka pymysql pymongo
+
+#指定基底文件為jupyter/base-notebook
+#FROM yangty10/news_jupyter-tutorial=>這包images太肥換別的
+FROM jupyter/base-notebook
+
+WORKDIR /home/jovyan/work/  #連外網的工作目錄
+RUN pip install --upgrade pip
