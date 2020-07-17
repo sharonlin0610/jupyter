@@ -6,6 +6,8 @@
 
 3.docker&docker-compose安裝完成後，
 
+#本機建立目錄 work 裡面要先建一個檔案 ex. *.txt檔
+
 #開啟終端機輸入
 
 git clone https://github.com/sharonlin0610/jupyter.git
