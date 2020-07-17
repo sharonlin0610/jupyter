@@ -1,0 +1,13 @@
+version: '2'
+services:
+  jupyter:
+    build:
+      context: ./dockerfile
+      dockerfile: dockerfile-jupyter
+    container_name: jupyter
+    hostname: jupyter
+    ports:
+      - "8889:8888"  #左邊連外網，右邊是Linux 內網
+    command: start-notebook.sh --NotebookApp.token=''
+    volumes:
+      - ./work:/home/jovyan/work #左邊是Linux 的目錄，右邊是外網
