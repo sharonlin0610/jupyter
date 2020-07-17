@@ -1,4 +1,4 @@
-20200709_P2_使用docker-compose打包jupyter
+使用docker-compose打包jupyter
 
 1.開啟虛擬機器(centos7)，建議使用user進入(建議別使用root)，進入後打開終端機
 
@@ -14,7 +14,7 @@ git clone https://github.com/sharonlin0610/jupyter.git
 
 #下載完成後
 
-cd 2020_dockercompose_jupyter
+cd jupyter
 
 docker-compose up -d
 
